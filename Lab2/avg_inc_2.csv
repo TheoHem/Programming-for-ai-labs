@@ -1,0 +1,169 @@
+,region,level of education,sex,2016,2017,2018,2019,2020
+0,01 Stockholm county,no information about level of educational attainment,men,228.8,220.2125,231.8,233.25,240.8375
+1,01 Stockholm county,no information about level of educational attainment,women,120.025,120.725,120.35,125.125,126.9875
+2,01 Stockholm county,post secondary education,men,449.225,458.82500000000005,472.8625,482.6375,494.425
+3,01 Stockholm county,post secondary education,women,329.2,339.0875,347.8625,359.2125,364.40000000000003
+4,01 Stockholm county,primary and lower secondary education,men,236.9625,241.21249999999998,246.275,249.825,251.4625
+5,01 Stockholm county,primary and lower secondary education,women,175.575,178.325,181.4375,184.1375,184.3875
+8,01 Stockholm county,upper secondary education,men,317.575,324.525,331.5375,337.7,338.8625
+9,01 Stockholm county,upper secondary education,women,249.475,255.91250000000002,261.925,267.375,268.8875
+10,03 Uppsala county,no information about level of educational attainment,men,154.675,165.1375,181.475,175.85,190.675
+11,03 Uppsala county,no information about level of educational attainment,women,108.1125,96.575,93.0125,96.0625,96.2125
+12,03 Uppsala county,post secondary education,men,379.875,388.125,399.35,403.28749999999997,410.675
+13,03 Uppsala county,post secondary education,women,290.9125,299.7125,305.525,314.9625,321.9875
+14,03 Uppsala county,primary and lower secondary education,men,241.0375,243.61249999999998,247.1875,253.3,253.0
+15,03 Uppsala county,primary and lower secondary education,women,165.2,166.7625,167.8375,170.6,171.2125
+18,03 Uppsala county,upper secondary education,men,305.175,313.075,320.7,324.9,327.375
+19,03 Uppsala county,upper secondary education,women,225.78750000000002,231.9625,238.0,242.4875,246.1125
+20,04 Södermanland county,no information about level of educational attainment,men,134.6375,135.2375,143.6,143.675,135.8375
+21,04 Södermanland county,no information about level of educational attainment,women,71.8,69.55,69.5125,71.325,70.225
+22,04 Södermanland county,post secondary education,men,407.2285714285714,413.12857142857143,423.25714285714287,430.37142857142857,437.24285714285713
+23,04 Södermanland county,post secondary education,women,311.61428571428576,321.7714285714286,330.4857142857143,338.7142857142857,348.4857142857143
+24,04 Södermanland county,primary and lower secondary education,men,217.5125,222.525,230.3125,232.5875,233.8125
+25,04 Södermanland county,primary and lower secondary education,women,150.15,152.575,154.5375,154.9375,156.1875
+28,04 Södermanland county,upper secondary education,men,290.575,299.0,306.5125,311.425,312.0625
+29,04 Södermanland county,upper secondary education,women,221.27499999999998,226.65,232.35,237.5,240.3375
+30,05 Östergötland county,no information about level of educational attainment,men,150.8625,131.25,144.975,143.1375,149.8
+31,05 Östergötland county,no information about level of educational attainment,women,66.0375,62.55,64.5,69.6875,73.775
+32,05 Östergötland county,post secondary education,men,373.3,379.91249999999997,387.4375,396.5125,404.0125
+33,05 Östergötland county,post secondary education,women,279.0625,283.3,294.525,300.1,306.1125
+34,05 Östergötland county,primary and lower secondary education,men,213.525,219.11249999999998,225.475,230.78750000000002,233.075
+35,05 Östergötland county,primary and lower secondary education,women,147.4625,150.025,152.6375,155.7,156.2125
+38,05 Östergötland county,upper secondary education,men,289.85,298.3375,305.875,312.525,314.375
+39,05 Östergötland county,upper secondary education,women,216.625,221.95,228.025,233.925,237.5375
+40,06 Jönköping county,no information about level of educational attainment,men,147.6,151.3125,151.275,160.9,159.9875
+41,06 Jönköping county,no information about level of educational attainment,women,79.025,76.6375,78.4375,81.5375,85.4875
+42,06 Jönköping county,post secondary education,men,405.92857142857144,415.4142857142857,426.8,431.92857142857144,437.62857142857143
+43,06 Jönköping county,post secondary education,women,274.2375,279.9625,288.25,295.5375,299.95
+44,06 Jönköping county,primary and lower secondary education,men,239.45,246.6625,254.0,257.7375,258.1375
+45,06 Jönköping county,primary and lower secondary education,women,161.325,165.7375,169.7375,171.75,171.1625
+48,06 Jönköping county,upper secondary education,men,305.3875,313.75,320.975,325.675,327.6375
+49,06 Jönköping county,upper secondary education,women,224.875,232.6875,238.875,244.1875,245.975
+50,07 Kronoberg county,no information about level of educational attainment,men,162.8625,160.1875,161.6,173.6,172.4375
+51,07 Kronoberg county,no information about level of educational attainment,women,98.375,97.35,102.33749999999999,107.9375,104.5625
+52,07 Kronoberg county,post secondary education,men,394.09999999999997,403.88571428571424,412.37142857142857,421.9428571428571,426.9142857142857
+53,07 Kronoberg county,post secondary education,women,302.2714285714286,313.1857142857143,321.4857142857143,328.59999999999997,333.5
+54,07 Kronoberg county,primary and lower secondary education,men,231.525,236.625,243.375,247.1375,248.15
+55,07 Kronoberg county,primary and lower secondary education,women,153.46249999999998,155.5375,157.9125,159.0,159.525
+58,07 Kronoberg county,upper secondary education,men,296.6125,304.95,311.225,316.8125,317.0125
+59,07 Kronoberg county,upper secondary education,women,222.02499999999998,227.7875,233.0625,238.7,239.5125
+60,08 Kalmar county,no information about level of educational attainment,men,130.1125,137.675,141.2125,141.675,137.025
+61,08 Kalmar county,no information about level of educational attainment,women,70.325,73.6,78.425,77.6625,82.4625
+62,08 Kalmar county,post secondary education,men,388.2285714285714,395.1857142857143,406.90000000000003,414.61428571428576,421.5
+63,08 Kalmar county,post secondary education,women,299.2285714285714,308.3142857142857,316.7285714285714,324.40000000000003,329.9714285714286
+64,08 Kalmar county,primary and lower secondary education,men,224.325,227.4625,234.3125,240.675,244.7125
+65,08 Kalmar county,primary and lower secondary education,women,156.6875,157.825,159.275,162.9125,165.325
+68,08 Kalmar county,upper secondary education,men,286.8,295.075,302.4375,308.3375,311.5875
+69,08 Kalmar county,upper secondary education,women,216.98749999999998,223.225,229.0375,234.225,238.9125
+70,09 Gotland county,no information about level of educational attainment,men,164.3375,179.45,180.925,172.6625,153.7875
+71,09 Gotland county,no information about level of educational attainment,women,80.71666666666667,79.8,79.48333333333333,84.68333333333332,89.03333333333335
+72,09 Gotland county,post secondary education,men,355.45714285714286,364.61428571428576,375.54285714285714,381.64285714285717,393.25714285714287
+73,09 Gotland county,post secondary education,women,296.64285714285717,304.5142857142857,313.5,323.1857142857143,330.07142857142856
+74,09 Gotland county,primary and lower secondary education,men,205.65,209.4875,217.0875,220.9625,222.3625
+75,09 Gotland county,primary and lower secondary education,women,162.9625,165.2,169.3625,172.675,177.875
+78,09 Gotland county,upper secondary education,men,258.4625,269.525,276.525,281.575,287.25
+79,09 Gotland county,upper secondary education,women,211.7875,218.525,225.5125,231.225,237.3
+80,10 Blekinge county,no information about level of educational attainment,men,144.275,152.9375,157.575,151.65,157.25
+81,10 Blekinge county,no information about level of educational attainment,women,79.325,72.75,72.6125,75.4125,81.125
+82,10 Blekinge county,post secondary education,men,390.34285714285716,400.85714285714283,412.0,422.38571428571424,428.35714285714283
+83,10 Blekinge county,post secondary education,women,303.24285714285713,314.25714285714287,321.8285714285715,329.0285714285714,336.14285714285717
+84,10 Blekinge county,primary and lower secondary education,men,214.8875,219.8875,224.8125,227.1875,231.225
+85,10 Blekinge county,primary and lower secondary education,women,153.1875,155.325,157.5875,158.9,163.425
+88,10 Blekinge county,upper secondary education,men,283.7375,294.65,300.875,306.9125,310.25
+89,10 Blekinge county,upper secondary education,women,217.6,224.3625,229.25,234.1625,237.95
+90,12 Skåne county,no information about level of educational attainment,men,191.5875,197.4625,201.4125,209.05,214.95
+91,12 Skåne county,no information about level of educational attainment,women,102.65,105.675,108.725,111.875,114.75
+92,12 Skåne county,post secondary education,men,373.3,383.25,393.27500000000003,401.1875,412.825
+93,12 Skåne county,post secondary education,women,279.3625,289.3,296.325,303.725,310.9125
+94,12 Skåne county,primary and lower secondary education,men,218.3875,221.3625,225.9125,230.475,233.825
+95,12 Skåne county,primary and lower secondary education,women,148.6375,150.6,152.3625,154.0625,156.625
+98,12 Skåne county,upper secondary education,men,286.225,293.2625,300.625,306.825,311.225
+99,12 Skåne county,upper secondary education,women,215.675,220.9875,226.825,232.8125,237.01250000000002
+100,13 Halland county,no information about level of educational attainment,men,175.1375,178.7,177.1125,183.2125,179.8375
+101,13 Halland county,no information about level of educational attainment,women,98.6,108.5625,121.375,116.9375,110.55
+102,13 Halland county,post secondary education,men,439.7857142857143,450.41428571428565,463.7857142857143,473.25714285714287,478.07142857142856
+103,13 Halland county,post secondary education,women,314.5285714285714,324.9142857142857,335.7285714285714,343.84285714285716,351.9428571428571
+104,13 Halland county,primary and lower secondary education,men,247.35,251.6375,258.4625,263.2125,266.375
+105,13 Halland county,primary and lower secondary education,women,165.2875,168.4375,171.1375,173.25,175.65
+108,13 Halland county,upper secondary education,men,312.1875,319.825,327.2,333.6875,337.4625
+109,13 Halland county,upper secondary education,women,226.67499999999998,233.275,239.5,244.55,248.125
+110,14 Västra Götaland county,no information about level of educational attainment,men,200.9625,205.32500000000002,203.9625,211.01250000000002,209.27499999999998
+111,14 Västra Götaland county,no information about level of educational attainment,women,97.875,94.10000000000001,98.55,103.975,103.9875
+112,14 Västra Götaland county,post secondary education,men,383.6625,391.1375,405.11249999999995,411.8375,415.4875
+113,14 Västra Götaland county,post secondary education,women,289.475,299.3375,306.125,314.0625,319.0375
+114,14 Västra Götaland county,primary and lower secondary education,men,231.1875,237.1625,243.65,248.1375,249.07500000000002
+115,14 Västra Götaland county,primary and lower secondary education,women,159.8375,163.1375,166.35,168.925,169.7375
+118,14 Västra Götaland county,upper secondary education,men,301.725,310.1125,318.9,324.8375,325.15
+119,14 Västra Götaland county,upper secondary education,women,227.2875,234.46249999999998,240.875,245.65,247.5
+120,17 Värmland county,no information about level of educational attainment,men,195.675,183.9875,185.1625,199.6625,180.875
+121,17 Värmland county,no information about level of educational attainment,women,125.325,114.7625,117.725,131.6,116.1125
+122,17 Värmland county,post secondary education,men,395.2142857142857,403.3285714285715,414.2857142857143,425.1857142857143,428.17142857142863
+123,17 Värmland county,post secondary education,women,305.7857142857143,315.24285714285713,324.0,332.14285714285717,337.4857142857143
+124,17 Värmland county,primary and lower secondary education,men,224.1125,227.7625,234.23749999999998,238.5875,236.125
+125,17 Värmland county,primary and lower secondary education,women,153.0625,154.1375,157.1375,159.1375,159.2625
+128,17 Värmland county,upper secondary education,men,288.5,298.65,307.075,313.1625,311.175
+129,17 Värmland county,upper secondary education,women,217.35,223.4375,228.9875,233.9875,235.3875
+130,18 Örebro county,no information about level of educational attainment,men,141.125,140.4125,139.425,151.9125,148.375
+131,18 Örebro county,no information about level of educational attainment,women,70.3375,70.3375,69.6625,81.675,81.425
+132,18 Örebro county,post secondary education,men,398.54285714285714,408.07142857142856,419.85714285714283,427.37142857142857,434.9142857142857
+133,18 Örebro county,post secondary education,women,311.5571428571429,320.7857142857143,327.65714285714284,335.8142857142857,342.14285714285717
+134,18 Örebro county,primary and lower secondary education,men,215.175,220.775,225.6375,228.7875,230.1125
+135,18 Örebro county,primary and lower secondary education,women,151.6625,153.0,155.8,156.825,157.575
+138,18 Örebro county,upper secondary education,men,290.7125,299.925,307.6375,312.675,313.9625
+139,18 Örebro county,upper secondary education,women,219.2375,225.7375,231.275,235.55,238.15
+140,19 Västmanland county,no information about level of educational attainment,men,154.3375,151.4,135.0875,159.20000000000002,169.775
+141,19 Västmanland county,no information about level of educational attainment,women,76.75,72.6125,77.175,82.45,83.8875
+142,19 Västmanland county,post secondary education,men,430.5857142857143,440.14285714285717,453.04285714285714,459.0571428571429,463.7285714285714
+143,19 Västmanland county,post secondary education,women,317.87142857142857,327.4428571428571,335.6857142857143,342.8285714285715,349.64285714285717
+144,19 Västmanland county,primary and lower secondary education,men,219.725,224.3625,229.575,233.9375,236.39999999999998
+145,19 Västmanland county,primary and lower secondary education,women,148.1875,149.4625,151.775,153.4125,153.2
+148,19 Västmanland county,upper secondary education,men,295.75,305.5625,312.075,318.325,319.4125
+149,19 Västmanland county,upper secondary education,women,219.7875,226.7875,231.7625,236.0625,239.4125
+150,20 Dalarna county,no information about level of educational attainment,men,146.8125,137.425,138.025,148.275,156.0875
+151,20 Dalarna county,no information about level of educational attainment,women,71.8625,65.7375,72.525,74.975,73.4625
+152,20 Dalarna county,post secondary education,men,397.1857142857143,407.11428571428576,416.62857142857143,426.35714285714283,431.4714285714286
+153,20 Dalarna county,post secondary education,women,308.38571428571424,317.2857142857143,325.1714285714285,334.4428571428571,340.88571428571424
+154,20 Dalarna county,primary and lower secondary education,men,221.9875,226.825,233.85,240.03750000000002,241.89999999999998
+155,20 Dalarna county,primary and lower secondary education,women,154.4,156.375,159.325,161.675,161.9625
+158,20 Dalarna county,upper secondary education,men,288.975,297.025,304.8875,311.225,312.975
+159,20 Dalarna county,upper secondary education,women,220.8875,226.70000000000002,231.9625,237.225,240.8125
+160,21 Gävleborg county,no information about level of educational attainment,men,119.325,121.0625,118.45,134.2625,141.55
+161,21 Gävleborg county,no information about level of educational attainment,women,67.2125,61.762499999999996,64.3875,70.4,76.0375
+162,21 Gävleborg county,post secondary education,men,393.7285714285714,406.3,414.0857142857143,424.7,428.38571428571424
+163,21 Gävleborg county,post secondary education,women,309.2857142857143,321.4142857142857,327.74285714285713,335.62857142857143,340.87142857142857
+164,21 Gävleborg county,primary and lower secondary education,men,219.875,224.725,232.625,236.4625,239.6125
+165,21 Gävleborg county,primary and lower secondary education,women,149.8875,152.5375,154.35,155.4875,159.1375
+168,21 Gävleborg county,upper secondary education,men,287.275,295.65,304.53749999999997,309.8625,311.625
+169,21 Gävleborg county,upper secondary education,women,216.9,221.8375,228.3,232.65,235.95
+170,22 Västernorrland county,no information about level of educational attainment,men,140.35,129.15,133.9875,133.9375,138.7
+171,22 Västernorrland county,no information about level of educational attainment,women,76.625,76.05,70.325,75.7,76.8
+172,22 Västernorrland county,post secondary education,men,403.92857142857144,410.92857142857144,421.5142857142857,431.0,436.5
+173,22 Västernorrland county,post secondary education,women,316.57142857142856,325.57142857142856,333.6857142857143,341.6714285714285,346.4428571428571
+174,22 Västernorrland county,primary and lower secondary education,men,221.0875,225.075,231.7,236.7875,240.75
+175,22 Västernorrland county,primary and lower secondary education,women,156.9625,159.4,161.3,162.0375,165.65
+178,22 Västernorrland county,upper secondary education,men,290.825,296.40000000000003,305.6875,310.6625,314.1375
+179,22 Västernorrland county,upper secondary education,women,223.275,229.0625,234.8625,239.15,242.7875
+180,23 Jämtland county,no information about level of educational attainment,men,149.6375,147.025,140.9125,148.6625,144.625
+181,23 Jämtland county,no information about level of educational attainment,women,100.9,96.375,96.0125,102.875,94.75
+182,23 Jämtland county,post secondary education,men,370.7714285714286,380.4142857142857,390.3,397.87142857142857,405.84285714285716
+183,23 Jämtland county,post secondary education,women,309.84285714285716,318.38571428571424,326.3,333.3285714285715,338.75714285714287
+184,23 Jämtland county,primary and lower secondary education,men,212.5125,217.525,225.0875,230.4,232.45
+185,23 Jämtland county,primary and lower secondary education,women,157.175,160.6625,165.225,167.95,169.5125
+188,23 Jämtland county,upper secondary education,men,271.1,280.075,289.15,295.0625,297.2
+189,23 Jämtland county,upper secondary education,women,219.475,226.6,231.9625,236.8875,239.4625
+190,24 Västerbotten county,no information about level of educational attainment,men,138.8125,126.36250000000001,128.525,137.825,140.7625
+191,24 Västerbotten county,no information about level of educational attainment,women,96.675,87.225,81.275,88.225,88.775
+192,24 Västerbotten county,post secondary education,men,384.4714285714286,393.59999999999997,401.87142857142857,410.90000000000003,417.9142857142857
+193,24 Västerbotten county,post secondary education,women,305.2714285714286,314.7142857142857,322.90000000000003,328.74285714285713,334.64285714285717
+194,24 Västerbotten county,primary and lower secondary education,men,224.9,227.32500000000002,235.0875,240.6625,243.575
+195,24 Västerbotten county,primary and lower secondary education,women,158.5625,160.725,163.425,168.4375,171.7875
+198,24 Västerbotten county,upper secondary education,men,291.4875,299.275,306.45,313.7375,317.6
+199,24 Västerbotten county,upper secondary education,women,221.725,227.025,232.825,238.375,240.23749999999998
+200,25 Norrbotten county,no information about level of educational attainment,men,164.95,147.85,164.675,172.225,167.1
+201,25 Norrbotten county,no information about level of educational attainment,women,105.3625,88.0,95.7375,101.0375,100.2125
+202,25 Norrbotten county,post secondary education,men,392.8,400.24285714285713,408.90000000000003,419.0285714285714,427.57142857142856
+203,25 Norrbotten county,post secondary education,women,316.42857142857144,324.74285714285713,333.38571428571424,341.9142857142857,347.42857142857144
+204,25 Norrbotten county,primary and lower secondary education,men,232.2875,236.7375,243.4875,251.875,256.2
+205,25 Norrbotten county,primary and lower secondary education,women,168.1625,170.825,174.475,178.75,182.5625
+208,25 Norrbotten county,upper secondary education,men,299.7,307.6375,316.75,324.7625,329.2625
+209,25 Norrbotten county,upper secondary education,women,230.2375,236.375,243.025,249.1875,252.775

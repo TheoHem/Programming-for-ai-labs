@@ -171,6 +171,54 @@ def lin_reg_post_secondary(df):
     post_secondary = df[df["level of education"] == "post secondary education"]
     return lin_reg_income_pop(post_secondary)
 
+def lin_reg(p, q):  
+    # Here, we will estimate the total number of points or observation  
+    n1 = np.size(p)  
+    # Now, we will calculate the mean of a and b vector  
+    m_p = np.mean(p)  
+    m_q = np.mean(q)  
+  
+    # here, we will calculate the cross deviation and deviation about a  
+    SS_pq = np.sum(q * p) - n1 * m_q * m_p  
+    SS_pp = np.sum(p * p) - n1 * m_p * m_p  
+  
+    # here, we will calculate the regression coefficients  
+    b_1 = SS_pq / SS_pp  
+    b_0 = m_q - b_1 * m_p  
+  
+    return (b_0, b_1)  
+ 
+
+def scatter_income_data(df, age):
+    #df["age"] = df["age"].str.extract('(\d+)').astype("int")
+    mean_income = []
+    #x = np.arange(16, 101)
+    x = age
+    for i in x:
+        mean_income.append(mean(df[df["age"] == i]["2020"]))
+    plt.scatter(x, mean_income,color="blue")
+    
+    est = lin_reg(x, mean_income)
+    pred_line = est[0] + est[1] * x
+    
+    plt.plot(x, pred_line, color="r")
+    
+    plt.xlabel('x')  
+    plt.ylabel('y')  
+    
+    plt.show()
+    return (x, mean_income, est)
+
+def predict_lin_reg(est, x):
+    return_arr = []
+    for i in x:
+        return_arr.append(est[0] + est[1] * i)
+    return return_arr
+
+def mse_rev(true_val, pred_val):
+    return np.square(np.subtract(true_val,pred_val)).mean()
+    #return mean(np.square(np.subtract(true_val,pred_val)))
+
 if __name__ == '__main__':    
     #Task 1
     data = load_data("pop_year_trim.csv")
@@ -182,7 +230,9 @@ if __name__ == '__main__':
     sum_population_edu_levels = sum_pop_all_edu_levels(data, region_names)
     mean_population_all_regions = mean_population_all_regions(sum_population_edu_levels)
     histogram_2020(sum_population_edu_levels)
-
+    
+    '''
+    #BEFORE REVISION
     #Task 3
     data2 = load_data("avg_inc_2.csv")
     
@@ -199,3 +249,24 @@ if __name__ == '__main__':
     lin_reg_post_secondary = lin_reg_post_secondary(merged_data)
     predicted_values_post_secondary = lin_reg_post_secondary.predict(np.array([[20000], [80000]])) #(379.22, 380.92)
     mse_post_secondary = mse(merged_data[merged_data["level of education"] == "post secondary education"], lin_reg_post_secondary) #328.98
+    '''
+    
+    #Task 3 revision
+    income_data = load_data("inc_utf.csv")
+    
+    #Task 4 revision
+    income_data["age"] = income_data["age"].str.extract('(\d+)').astype("int")
+    scatter_income_return = scatter_income_data(income_data, np.arange(16, 101))
+    #Predict [35, 80]
+    pred_pop_1 = predict_lin_reg(scatter_income_return[2], [35, 80]) # [287.7096121239193, 269.4587634123417]
+    #MSE
+    pred_all = predict_lin_reg(scatter_income_return[2], scatter_income_return[1])
+    mse_income = mse_rev(scatter_income_return[1], pred_all)
+    
+    #Above 30
+    scatter_income_return_above_thirty = scatter_income_data(income_data, np.arange(30, 101))
+    #Predict [35, 80]
+    pred_pop_2 = predict_lin_reg(scatter_income_return_above_thirty[2], [35, 80]) # [400.6127527067159, 252.97360352591755]
+    #MSE
+    pred_all_above_thirty = predict_lin_reg(scatter_income_return_above_thirty[2], scatter_income_return_above_thirty[1])
+    mse_income_above_thirty = mse_rev(scatter_income_return_above_thirty[1], pred_all_above_thirty)

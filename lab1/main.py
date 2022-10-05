@@ -1,7 +1,7 @@
 import math
 from matplotlib import pyplot as plt
 import pandas as pd
-import numpy as np
+#import numpy as np
 
 grades = [8, 6, 1, 7, 8, 9, 8, 7, 10, 7, 6, 9, 7]
 
@@ -20,10 +20,10 @@ def max(array):
     return temp
 
 def range(array):
-    return max(array) - min(array)
+    return max(array) - min(array) #Should i return absolute value?
 
 def mean(array):
-    return sum(array) / len(array)
+    return sum(array) / len(array) 
 
 def variance(array):
     # calculate mean
@@ -56,13 +56,19 @@ def mean_absolute_deviation(array):
         deviation_from_medeian_abs.append(abs(i - array_median))
     return mean(deviation_from_medeian_abs)
 
+
+
 def plot_housing():
     housing = pd.read_csv("housing.csv")
     # a
     num_of_districts = housing.shape[0]
+    print("Number of districts")
     print(num_of_districts)
+    print("")
     # b
-    mean(housing["median_house_value"])
+    print("Mean house values:")
+    print(mean(housing["median_house_value"]))
+    print("")
 
     # c
     figure, axis = plt.subplots(2, 2)
@@ -76,32 +82,67 @@ def plot_housing():
     axis[1, 0].hist(housing["median_house_value"])
     axis[1, 0].set_title("median_house_value")
 
-    axis[1, 1].hist(num_of_districts)
-    axis[1, 1].set_title("num_of_districts")
+    axis[1, 1].hist(housing["households"])
+    axis[1, 1].set_title("households")
+    
+    plt.suptitle("All Regions")
+    plt.tight_layout()
     plt.show()
+    
+    #f
+    ocean_prox = housing["ocean_proximity"].unique()
+    print("Mean per district:")
+    for i in ocean_prox:
+        per_region = housing[housing["ocean_proximity"] == i]
+        print("")
+        print(i)
+        print(mean(per_region["median_income"]))
+        
+        figure, axis = plt.subplots(2, 2)
+
+        axis[0, 0].hist(per_region["median_income"])
+        axis[0, 0].set_title("median_income")
+
+        axis[0, 1].hist(per_region["housing_median_age"])
+        axis[0, 1].set_title("housing_median_age ")
+
+        axis[1, 0].hist(per_region["median_house_value"])
+        axis[1, 0].set_title("median_house_value")
+
+        axis[1, 1].hist(per_region["households"])
+        axis[1, 1].set_title("households")
+        
+        plt.suptitle(i)
+        plt.tight_layout()
+        plt.show()
+    return housing
 
 if __name__ == '__main__':
-    print("Min:")
+    print("Min:") #The minimum value of a dataset
     print(min(grades))
     print("")
     print("Max:")
-    print(max(grades))
+    print(max(grades)) # The maximum value of a dataset
     print("")
-    print("Range:")
-    print(range(grades))
+    print("Range:") 
+    print(range(grades)) #Show how "wide" a dataset is
     print("")
     print("Mean:")
-    print(mean(grades))
+    print(mean(grades)) #Gives one number for the avarage of the dataset
     print("")
-    print("Variance:")
+    print("Variance:") #Measueres variability
     print(variance(grades))
     print("")
-    print("Standard deviation:")
+    print("Standard deviation:") #Also measures variability, but is in the same unit of measurement as the original value
     print(std_dev(grades))
     print("")
-    print("Median:")
+    print("Median:") #The middle value of a dataset, useful if the data is skewed(for example salary in a country, mean and median will differ quite a bit)
     print(median(grades))
     print("")
-    print("Mean absolute deviation:")
+    print("Mean absolute deviation:") #The avarage distance between all datapoints in a dataset and it's mean. Also a measure of variability
+    print(mean_absolute_deviation(grades))
+    print("")
+    plt.hist(grades)
+    plt.show()
     mean_absolute_deviation(grades)
-    plot_housing()
+    housing = plot_housing()

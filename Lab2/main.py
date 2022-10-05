@@ -3,6 +3,7 @@ import pandas as pd
 from matplotlib import pyplot as plt
 import numpy as np
 from sklearn.linear_model import LinearRegression
+import csv
 
 #Lab 1
 def min(array):
@@ -57,12 +58,24 @@ def mean_absolute_deviation(array):
     return mean(deviation_from_medeian_abs)
 
 #Lab2
+'''
 def load_data(filename):
-    return pd.read_csv(filename)
+    #return pd.read_csv(filename)
+    return load_data_2(filename)
+'''
+
+def load_data(filename):
+    with open(filename, 'r', encoding='UTF-8') as f:
+        csv_reader = csv.reader(f)
+        df = pd.DataFrame(csv_reader)
+        df = df.set_axis(df.iloc[0], axis=1, inplace=False)
+        df = df.iloc[: , 1:]
+        df = df.iloc[1: , :]
+    return df
 
 def mean_pop_post_sec_norrbotten(df):
     norrbotten = df[df["region"] == "25 Norrbotten county"].iloc[:, -5:].astype(int)
-    return sum(norrbotten.iloc[0])
+    return sum(norrbotten.iloc[0]) / len(norrbotten.iloc[0])
 
 def std_dev_pop_post_sec_norrbotten(df):
     norrbotten = df[df["region"] == "25 Norrbotten county"].iloc[:, -5:].astype(int)
@@ -219,7 +232,7 @@ def mse_rev(true_val, pred_val):
     return np.square(np.subtract(true_val,pred_val)).mean()
     #return mean(np.square(np.subtract(true_val,pred_val)))
 
-if __name__ == '__main__':    
+if __name__ == '__main__':
     #Task 1
     data = load_data("pop_year_trim.csv")
 
@@ -227,6 +240,7 @@ if __name__ == '__main__':
     post_secondary = data[data["level of education"] == "post secondary education"]
     region_names = post_secondary["region"]
     post_secondary = post_secondary.drop("level of education", axis=1)
+    post_secondary_norrbotten = mean_pop_post_sec_norrbotten(post_secondary)
     sum_population_edu_levels = sum_pop_all_edu_levels(data, region_names)
     mean_population_all_regions = mean_population_all_regions(sum_population_edu_levels)
     histogram_2020(sum_population_edu_levels)
@@ -253,15 +267,16 @@ if __name__ == '__main__':
     
     #Task 3 revision
     income_data = load_data("inc_utf.csv")
+    income_data["2020"] = pd.to_numeric(income_data["2020"])
     
     #Task 4 revision
     income_data["age"] = income_data["age"].str.extract('(\d+)').astype("int")
     scatter_income_return = scatter_income_data(income_data, np.arange(16, 101))
     #Predict [35, 80]
     pred_pop_1 = predict_lin_reg(scatter_income_return[2], [35, 80]) # [287.7096121239193, 269.4587634123417]
-    #MSE
+    #MSE - Avarage squared error(diff between actual and predicted value). Squared to get rid of negative numbers -> simpler to handle.
     pred_all = predict_lin_reg(scatter_income_return[2], scatter_income_return[1])
-    mse_income = mse_rev(scatter_income_return[1], pred_all)
+    mse_income = mse_rev(scatter_income_return[1], pred_all) #27890.405823634545
     
     #Above 30
     scatter_income_return_above_thirty = scatter_income_data(income_data, np.arange(30, 101))
@@ -269,4 +284,4 @@ if __name__ == '__main__':
     pred_pop_2 = predict_lin_reg(scatter_income_return_above_thirty[2], [35, 80]) # [400.6127527067159, 252.97360352591755]
     #MSE
     pred_all_above_thirty = predict_lin_reg(scatter_income_return_above_thirty[2], scatter_income_return_above_thirty[1])
-    mse_income_above_thirty = mse_rev(scatter_income_return_above_thirty[1], pred_all_above_thirty)
+    mse_income_above_thirty = mse_rev(scatter_income_return_above_thirty[1], pred_all_above_thirty) #731104.8090470812
